@@ -1,7 +1,7 @@
 @echo off
 SETLOCAL ENABLEDELAYEDEXPANSION
 set INPUT_FILE=email.csv
-set OUTPUT_FILE=emails.txt
+set OUTPUT_FILE=emails_output.csv
 set "REGEXP=[\.A-Z\-_][\.A-Z\-_]*@[\.A-Z\-_][\.A-Z\-_]*"
 >nul copy nul %OUTPUT_FILE%
 for /f "tokens=*" %%a in (%INPUT_FILE%) do (
